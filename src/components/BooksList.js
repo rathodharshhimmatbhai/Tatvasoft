@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 // import { Button } from "@material-ui/utils";
@@ -10,7 +11,9 @@ const BooksList = () => {
   return (
     <>
       <div>Welcome to BooksList </div>
-      <button onClick={handleOnClick}>Click Me!</button>
+      <div>
+      <Button variant="contained" onClick={handleOnClick} color="info">Click Me</Button>
+      </div>
     </>
   );
 };

@@ -4,15 +4,14 @@ import HomePage from "./components/HomePage";
 import BooksList from "./components/BooksList";
 import PageNotFound from "./components/PageNotFound";
 import Image from "./logo.svg"
-
-export default function App() {
+import { GlobalStyles } from "./styles/GlobalStyles";
+export default function App(){
   return (
     <div className="App">
-      <img src={Image} alt="This is logo"/>
+      <img src={Image} style={GlobalStyles.pic}  alt="This is Logo"/>
       <BrowserRouter>
-      <div className="navbar">
-        <NavLink to="/"> Home </NavLink>
-        <br/>
+      <div className="navbar" style={GlobalStyles.navbar}>
+        <NavLink to="/" > Home </NavLink>
         <NavLink to="/books"> Books </NavLink>
       </div>
         <Routes>
