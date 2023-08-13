@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 // import { Button } from "@material-ui/utils";
-
+import WithAuth from "../layout/WithAuth.js";
 const BooksList = () => {
   const navigate = useNavigate();
   const handleOnClick = () => {
@@ -18,4 +18,4 @@ const BooksList = () => {
   );
 };
 
-export default BooksList;
+export default WithAuth(BooksList);

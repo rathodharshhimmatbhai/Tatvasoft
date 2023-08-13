@@ -97,6 +97,7 @@ const Form1 = () => {
                                 label="Password"
                                 name="Password"
                                 variant="outlined"
+                                type='password'
                                 value={values.Password}
                                 
                                 onBlur={handleBlur}
