@@ -28,6 +28,7 @@ export const CartWrapper = ({ children }) => {
       cartService.getList(authContext.user.id).then((res) => setCartData(res));
     }
   };
+  console.log(cartData);
   const emptyCart = () => {
     setCartData([]);
   };

@@ -18,7 +18,7 @@ const App = () => {
       <React.Suspense fallback={<></>}>
         <BrowserRouter>
           <AuthWrapper>
-            {/* <CartWrapper> */}
+            <CartWrapper>
             <div className="loader-wrapper">
               <img src={loader} alt="loader" />
             </div>
@@ -30,7 +30,7 @@ const App = () => {
               <Footer />
             </div>
             <ToastContainer />
-            {/* </CartWrapper> */}
+            </CartWrapper>
           </AuthWrapper>
         </BrowserRouter>
       </React.Suspense>

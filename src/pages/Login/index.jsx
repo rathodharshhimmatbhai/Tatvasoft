@@ -109,7 +109,7 @@ const Login = () => {
                           onBlur={handleBlur}
                           onChange={handleChange}
                           label="Email Address *"
-                          autoComplete="off"
+                         
                           variant="outlined"
                           inputProps={{ className: "small" }}
                         />
